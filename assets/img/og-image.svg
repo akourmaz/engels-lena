@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Engels met Lena — business English, online and in-company">
+  <rect width="1200" height="630" fill="#072a26"/>
+  <rect x="60" y="60" width="1080" height="510" rx="16" fill="#faf8f4"/>
+  <text x="120" y="270" font-family="Georgia, serif" font-size="72" fill="#00423a">Engels met Lena</text>
+  <text x="120" y="350" font-family="Georgia, serif" font-size="34" font-style="italic" fill="#97783f">Speak and write English with confidence</text>
+  <text x="120" y="450" font-family="Arial, sans-serif" font-size="26" fill="#5b6a64">Business English · online &amp; in-company · Drenthe—Groningen</text>
+  <circle cx="990" cy="315" r="105" fill="#005c50" opacity="0.12"/>
+  <circle cx="990" cy="275" r="42" fill="#005c50" opacity="0.32"/>
+  <path d="M990 328c-46 0-76 27-76 68h152c0-41-30-68-76-68z" fill="#005c50" opacity="0.32"/>
+</svg>

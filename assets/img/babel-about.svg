@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Line-art illustration: a teacher at a laptop during an online lesson">
+  <rect width="800" height="800" fill="#ecd9f6"/>
+  <g fill="none" stroke="#70001f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <!-- desk -->
+    <path d="M120 596 H680"/>
+    <!-- laptop -->
+    <path d="M300 596 v-118 a10 10 0 0 1 10 -10 h180 a10 10 0 0 1 10 10 v118" fill="#ffffff"/>
+    <path d="M272 596 h256"/>
+    <!-- teacher -->
+    <circle cx="400" cy="286" r="62" fill="#faf7e8"/>
+    <path d="M330 468 c0 -60 32 -104 70 -104 s70 44 70 104"/>
+    <path d="M330 440 l-72 46"/>
+    <path d="M470 440 l70 46"/>
+    <!-- floating bubbles -->
+    <circle cx="192" cy="232" r="56" fill="#efe673"/>
+    <path d="M222 282 l16 44 -44 -20"/>
+    <circle cx="628" cy="300" r="40" fill="#ffffff"/>
+    <path d="M600 334 l-24 36 46 -10"/>
+  </g>
+</svg>

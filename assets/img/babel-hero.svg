@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Line-art illustration: two people talking, with large speech bubbles">
+  <!-- shadows -->
+  <g fill="#70001f" opacity=".13">
+    <ellipse cx="198" cy="532" rx="88" ry="13"/>
+    <ellipse cx="428" cy="532" rx="76" ry="12"/>
+    <ellipse cx="694" cy="536" rx="126" ry="16"/>
+  </g>
+
+  <g fill="none" stroke="#70001f" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ground -->
+    <path d="M40 520 H860"/>
+
+    <!-- big mustard speech bubble -->
+    <circle cx="694" cy="398" r="122" fill="#e9da63"/>
+    <path d="M778 484 l56 64 -84 -18"/>
+
+    <!-- lilac speech bubble -->
+    <circle cx="662" cy="126" r="78" fill="#c79be2"/>
+    <path d="M696 190 l32 52 -60 -16"/>
+
+    <!-- small white speech bubble -->
+    <circle cx="832" cy="234" r="48" fill="#ffffff"/>
+    <path d="M802 270 l-28 40 48 -10"/>
+
+    <!-- figure A: standing, arm raised in greeting -->
+    <circle cx="196" cy="172" r="48" fill="#faf7e8"/>
+    <path d="M232 136 a19 19 0 1 0 .1 0" fill="#faf7e8"/>
+    <path d="M196 222 C 154 244 138 302 142 376 L 252 376 C 254 302 238 244 196 222 Z" fill="#faf7e8"/>
+    <path d="M150 268 C 128 300 116 330 110 356"/>
+    <path d="M242 258 C 270 234 292 212 312 192"/>
+    <path d="M170 376 C 162 430 154 480 150 518"/>
+    <path d="M228 376 C 238 430 248 480 254 518"/>
+
+    <!-- figure B: facing A, hand extended -->
+    <circle cx="428" cy="228" r="44" fill="#faf7e8"/>
+    <path d="M428 274 C 392 294 378 344 382 406 L 476 406 C 480 344 464 294 428 274 Z" fill="#faf7e8"/>
+    <path d="M386 312 C 360 298 340 286 324 276"/>
+    <path d="M472 322 C 490 346 500 372 506 396"/>
+    <path d="M404 406 C 396 452 388 490 384 518"/>
+    <path d="M458 406 C 466 452 476 490 482 518"/>
+  </g>
+</svg>
