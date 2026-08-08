@@ -15,8 +15,7 @@
 /* ---- Micro-feedback (safe outside the motion gate: tiny + functional) ---- */
 .site .btn { transition: background-color var(--dur-base) ease, color var(--dur-base) ease, border-color var(--dur-base) ease, scale var(--dur-fast) ease; }
 .site .btn:active { scale: 0.97; }
-.site .quiz__opt:active,
-.site .plan-toggle button:active { scale: 0.98; }
+.site .quiz__opt:active { scale: 0.98; }
 
 @media (prefers-reduced-motion: no-preference) {
 
@@ -62,9 +61,7 @@
      ========================================================= */
 
   /* Pricing: "Most popular" flag pops in; owning card highlighted */
-  .site .price-card__flag:not([hidden]) { animation: m-pop var(--dur-base) var(--ease-out); }
   .site .price-card { transition: border-color var(--dur-base) ease, box-shadow var(--dur-base) ease, translate var(--dur-base) var(--ease-out); }
-  .site .price-card:has(.price-card__flag:not([hidden])) { translate: 0 -4px; }
 
   /* Quiz: direction-aware — a new step slides in from the right */
   .site .quiz-q:not([hidden]) { animation: m-step-in 0.35s var(--ease-out); }

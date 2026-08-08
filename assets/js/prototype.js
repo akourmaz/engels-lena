@@ -435,49 +435,49 @@
     var LEVEL_FROM_BAND = { A: "beginner", B1: "intermediate", B2: "advanced", C: "advanced" };
 
     var WA = "https://wa.me/31618404015?text=";
-    var PLAN_NAME = { single: "a single lesson", pack5: "the package of 5 lessons", pack10: "the package of 10 lessons" };
+    var PLAN_NAME = { individual: "individual lessons", group: "group lessons", correspondence: "correspondence and translation" };
 
     /* Тексты модалки по смыслу кнопки. Ключ выбирается в pickCopy().
        Пробных уроков нет — вход в воронку везде один: бесплатный интейк-разговор. */
     var COPY = {
       intake: {
-        kicker: "Free intake call · 15 minutes · online",
-        title: "Book your free intake call",
-        lead: "Leave your name and one contact — an e-mail address or a phone number. I reply within 24 hours with two or three times that fit. Fifteen minutes, no payment, nothing to prepare.",
-        msgLabel: "Anything I should know?",
-        msgHint: "Your job, what you struggle with, when you are usually free…",
-        done: "I read every message myself and reply within 24 hours with two or three possible times. If it is urgent, WhatsApp is the fastest way to reach me.",
+        kicker: "Free · 15 minutes · online",
+        title: "Book your intake call",
+        lead: "I reply within 24 hours with times that fit.",
+        msgLabel: "Your message",
+        msgHint: "What you need English for…",
+        done: "I reply within 24 hours with a few possible times. WhatsApp is faster if it is urgent.",
         submit: "Book my intake call",
         wa: "Hi Lena! I'd like a free intake call about English lessons."
       },
       plan: {
-        kicker: "Intake call first · then we set the course",
-        title: "Start with a free intake call",
-        lead: "Nothing is fixed yet: at the intake we agree the goal, the rate, how long the course runs and how often we meet. Leave your name and one contact — an e-mail address or a phone number — and I reply within 24 hours with times that fit.",
-        msgLabel: "Anything I should know?",
-        msgHint: "Your job, what you struggle with, when you are usually free…",
-        done: "I read every message myself and reply within 24 hours with two or three possible times. If it is urgent, WhatsApp is the fastest way to reach me.",
+        kicker: "Free intake call first",
+        title: "Book your intake call",
+        lead: "Nothing is fixed yet — we agree the goal and the plan on the call.",
+        msgLabel: "Your message",
+        msgHint: "What you need English for…",
+        done: "I reply within 24 hours with a few possible times. WhatsApp is faster if it is urgent.",
         submit: "Book my intake call",
         wa: "Hi Lena! I'd like a free intake call about English lessons."
       },
       incompany: {
-        kicker: "In-company training · Drenthe &amp; Groningen",
+        kicker: "In-company training",
         title: "Get a proposal for your team",
-        lead: "Leave your name and one contact — an e-mail address or a phone number — and a line about your team. I reply within 24 hours with a proposal: format, dates and price.",
+        lead: "I reply within 24 hours with a proposal.",
         msgLabel: "About your team",
         msgOptional: false,        /* здесь строчка о команде и правда нужна */
-        msgHint: "How many people, what they need English for, where you are based…",
-        done: "I read every message myself and reply within 24 hours with a proposal for your team — format, dates and price. If it is urgent, WhatsApp is the fastest way to reach me.",
+        msgHint: "How many people, what they need English for…",
+        done: "I reply within 24 hours with a proposal — format, dates and price.",
         submit: "Ask for a proposal",
         wa: "Hi Lena! We'd like a proposal for in-company English training."
       },
       level: {
-        kicker: "Free intake call · 15 minutes · online",
+        kicker: "Free · 15 minutes · online",
         title: "Let&rsquo;s confirm your level",
-        lead: "The self-check gives a rough band — we confirm it properly at the free 15-minute intake call. Leave your name and one contact, an e-mail address or a phone number, and I reply within 24 hours.",
-        msgLabel: "Anything I should know?",
-        msgHint: "Your job, what you struggle with, when you are usually free…",
-        done: "I read every message myself and reply within 24 hours with two or three possible times. If it is urgent, WhatsApp is the fastest way to reach me.",
+        lead: "The self-check gives a rough band — we confirm it on the call.",
+        msgLabel: "Your message",
+        msgHint: "What you need English for…",
+        done: "I reply within 24 hours with a few possible times. WhatsApp is faster if it is urgent.",
         submit: "Book my intake call",
         wa: "Hi Lena! I did the level check on your site and I'd like an intake call."
       }

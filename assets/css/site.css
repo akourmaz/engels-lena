@@ -319,6 +319,8 @@ a:hover { text-decoration-color: currentColor; }
 #reviews { background: var(--wine); color: #f6ece2; }
 #reviews h2, #reviews h3 { color: var(--paper); }
 #reviews .section-kicker { color: var(--sun); }
+#reviews .section-lead { color: rgba(246, 236, 226, .85); }
+#reviews .quote { background: var(--paper); border-color: transparent; }
 
 /* ---------- О преподавателе ---------- */
 .about__grid { display: grid; gap: clamp(24px, 4vw, 52px); align-items: center; }
@@ -471,30 +473,6 @@ a:hover { text-decoration-color: currentColor; }
 .compare .no { color: rgba(56, 0, 15, .6); }
 
 /* ---------- Тарифы ---------- */
-.plan-toggle {
-  display: inline-flex;
-  gap: 4px;
-  padding: 5px;
-  background: var(--white);
-  border: 1px solid var(--line-soft);
-  border-radius: var(--r-pill);
-  margin-bottom: clamp(20px, 3vw, 30px);
-}
-.section--beige .plan-toggle { background: var(--paper); }
-.plan-toggle button {
-  border: 0;
-  background: transparent;
-  border-radius: var(--r-pill);
-  padding: .62em 1.25em;
-  font: inherit;
-  font-size: .92rem;
-  font-weight: 600;
-  color: var(--wine);
-  cursor: pointer;
-  transition: background-color .18s ease, color .18s ease;
-}
-.plan-toggle button.is-active { background: var(--wine); color: var(--sun); }
-
 .pricing { display: grid; gap: clamp(14px, 2vw, 22px); }
 @media (min-width: 860px) { .pricing { grid-template-columns: repeat(3, 1fr); } }
 .price-card {
@@ -505,20 +483,6 @@ a:hover { text-decoration-color: currentColor; }
   border: 1px solid var(--line-soft);
   border-radius: var(--r-md);
   padding: clamp(24px, 3vw, 34px);
-}
-.price-card:has(.price-card__flag:not([hidden])) {
-  border-color: var(--wine);
-  background: var(--paper-2);
-}
-.price-card__flag {
-  position: absolute;
-  top: -14px; left: clamp(20px, 3vw, 30px);
-  background: var(--sun);
-  color: var(--wine);
-  border-radius: var(--r-pill);
-  padding: .42em 1em;
-  font-size: .78rem;
-  font-weight: 700;
 }
 .price-card h3 { margin-bottom: .35em; }
 .price-card__amount {
@@ -607,6 +571,48 @@ a:hover { text-decoration-color: currentColor; }
   cursor: pointer;
 }
 .quiz__restart:hover { background: rgba(112, 0, 31, .06); }
+
+/* ---------- Отзывы (реальные, 2026-08-08) ---------- */
+.quotes { display: grid; gap: clamp(14px, 2vw, 22px); }
+@media (min-width: 860px) { .quotes { grid-template-columns: repeat(3, 1fr); } }
+.quote {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background: var(--white);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r-md);
+  padding: clamp(22px, 3vw, 32px);
+}
+.section--beige .quote { background: var(--paper); }
+@media (min-width: 860px) { .quote--wide { grid-column: 1 / -1; } }
+.quote blockquote {
+  margin: 0 0 1.2em;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1rem, 1.4vw, 1.1rem);
+  line-height: 1.6;
+  color: var(--ink);
+}
+.quote--wide blockquote p { margin: 0 0 .7em; }
+.quote--wide blockquote p:last-child { margin-bottom: 0; }
+.quote figcaption { display: flex; align-items: center; gap: .8em; margin-top: auto; }
+.quote__avatar {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: var(--r-pill);
+  background: var(--lilac-soft);
+  color: var(--wine);
+  font-weight: 700;
+}
+.quote__avatar--sun { background: var(--sun-soft); }
+.quote__avatar--wine { background: var(--wine); color: var(--sun); }
+.quote figcaption strong { display: block; color: var(--wine-deep); font-weight: 600; }
+/* только подпись, не буква в кружке — иначе перебивает цвет .quote__avatar */
+.quote figcaption div span { font-size: .85rem; color: #6a4a4f; }
 
 /* ---------- Гарантия ---------- */
 .guarantee {
@@ -854,11 +860,8 @@ a:hover { text-decoration-color: currentColor; }
   font-size: .9rem;
 }
 
-.book__grid { display: grid; gap: 14px; }
+.book__grid { display: grid; gap: 14px; margin: 0 0 14px; }
 @media (min-width: 620px) { .book__grid { grid-template-columns: 1fr 1fr; } }
-
-/* Подсказка под контактным полем: почему хватает одного контакта */
-.field__hint { margin: 8px 0 16px; font-size: .84rem; color: #6a4a4f; }
 
 .field { display: flex; flex-direction: column; gap: 6px; margin: 0 0 14px; }
 .book__grid .field { margin: 0; }
@@ -896,7 +899,6 @@ a:hover { text-decoration-color: currentColor; }
 .book__label-sending { display: none; }
 [data-state="sending"] .book__label-idle { display: none; }
 [data-state="sending"] .book__label-sending { display: inline; }
-.book__fineprint { margin: 14px 0 0; font-size: .8rem; color: rgba(56, 0, 15, .6); }
 
 .book__success { text-align: center; padding: 8px 0 4px; }
 .book__success:focus { outline: none; }
@@ -933,7 +935,7 @@ html { -webkit-tap-highlight-color: transparent; }
   .site-nav a:not(.btn),
   .mobile-menu a:not(.btn) { min-height: 48px; display: flex; align-items: center; }
   .faq summary { min-height: 56px; }
-  .quiz-opt, .plan-toggle button { min-height: 48px; }
+  .quiz-opt { min-height: 48px; }
   .btn { min-height: 48px; }
 }
 .btn:active { transform: translateY(1px); }
@@ -1106,10 +1108,24 @@ main [id], section[id] { scroll-margin-top: calc(var(--header-h) + 12px); }
   .book__panel {
     border-radius: var(--r-lg) var(--r-lg) 0 0;
     max-height: 92dvh;
-    padding: 26px 18px calc(24px + env(safe-area-inset-bottom, 0px));
+    padding: 20px 16px calc(18px + env(safe-area-inset-bottom, 0px));
   }
   .book__actions .btn { flex: 1 1 100%; justify-content: center; }
-  .book__lead { font-size: .92rem; }
+
+  /* Форма должна помещаться в один экран (iPhone 13 и мельче) — без прокрутки.
+     Размер шрифта в полях не трогаем: меньше 16px iOS зумит форму. */
+  .book__kicker { font-size: .68rem; margin-bottom: 4px; padding-right: 46px; }
+  .book__title { font-size: 1.3rem; margin-bottom: 6px; padding-right: 46px; }
+  .book__lead { font-size: .9rem; margin-bottom: 14px; }
+  .book__source { margin: -10px 0 14px; }
+  .book__grid { gap: 10px; margin-bottom: 10px; }
+  .field { gap: 4px; margin-bottom: 10px; }
+  .field input[type="text"], .field input[type="email"], .field input[type="tel"],
+  .field select, .field textarea { padding: 10px 12px; min-height: 46px; }
+  .field textarea { min-height: 56px; }
+  .field--check { margin-bottom: 14px; }
+  .book__actions { gap: 8px; }
+  .book__error { margin-bottom: 14px; padding: 10px 12px; font-size: .86rem; }
 
   /* Sticky-бар: текст + WhatsApp + основная кнопка должны влезть в 320px */
   .sticky-cta { gap: 8px; padding-left: 14px; }

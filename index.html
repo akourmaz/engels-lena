@@ -7,7 +7,6 @@
   <title>Business English Lessons — Online &amp; In-Company in Drenthe and Groningen | Engels met Lena</title>
   <meta name="description" content="Business English and business correspondence with Lena — teaching since 2007. Private 70-minute lessons online or in Borger, and group training at your workplace in Drenthe and Groningen.">
 
-  <!-- Domain is a working hypothesis (data-synthetic: domain) -->
   <link rel="canonical" href="https://engelsmetlena.nl/">
 
   <meta property="og:type" content="website">
@@ -15,7 +14,10 @@
   <meta property="og:title" content="Business English Lessons — Online &amp; In-Company | Engels met Lena">
   <meta property="og:description" content="Business English and business correspondence with Lena. Teaching since 2007. Private lessons online or in Borger, group training at your workplace in Drenthe and Groningen.">
   <meta property="og:url" content="https://engelsmetlena.nl/">
-  <meta property="og:image" content="https://engelsmetlena.nl/assets/img/og-image.svg">
+  <meta property="og:image" content="https://engelsmetlena.nl/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Engels met Lena — Speak and write English with confidence. Business English and correspondence, online and in Borger.">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -34,9 +36,9 @@
         "@type": ["Person", "Organization"],
         "@id": "https://engelsmetlena.nl/#lena",
         "name": "Engels met Lena",
-        "alternateName": "English with Lena",
+        "alternateName": ["English with Lena", "Olena"],
         "url": "https://engelsmetlena.nl/",
-        "image": "https://engelsmetlena.nl/assets/img/og-image.svg",
+        "image": "https://engelsmetlena.nl/assets/img/og-image.png",
         "givenName": "Elena",
         "familyName": "Hagenaar",
         "email": "elena.v.hagenaar@gmail.com",
@@ -75,10 +77,6 @@
           }
         ],
         "areaServed": ["Drenthe", "Groningen", "Borger", "Online"],
-        "sameAs": [
-          "https://instagram.com/placeholder.met.lena",
-          "https://linkedin.com/in/lena-placeholder"
-        ],
         "contactPoint": [
           {
             "@type": "ContactPoint",
@@ -117,7 +115,9 @@
           },
           {
             "@type": "Offer",
-            "name": "Group lesson (75 minutes; 90 minutes from six participants) — quoted per group"
+            "name": "Group lesson (75 minutes; 90 minutes from six participants) — price is for the whole group",
+            "price": "120",
+            "priceCurrency": "EUR"
           },
           {
             "@type": "Offer",
@@ -143,7 +143,7 @@
             "name": "How much do business English lessons cost, and how long is a lesson?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "An individual lesson runs 70 minutes, a group lesson 75 — and 90 minutes from six participants, so everyone gets checked properly. A single lesson is €45. Translation and support with business correspondence are €55 per hour. Group and in-company prices depend on the size of the group and how demanding the subject is; you get the figure at the intake call."
+              "text": "An individual lesson runs 70 minutes and costs €45; a group lesson runs 75 — and 90 minutes from six participants, so everyone gets checked properly. A group lesson is €120 for the whole group, whatever its size — with six people that is €20 each. Translation and support with business correspondence are €55 per hour. In-company courses are quoted per company, because the price includes the time I spend on site working out what your people need."
             }
           },
           {
@@ -199,6 +199,7 @@
         <a href="#about">About</a>
         <a href="#lessons">Lessons</a>
         <a href="#prices">Prices</a>
+        <a href="#reviews">Reviews</a>
         <a href="#faq">FAQ</a>
         <button type="button" class="btn btn--primary" data-book="header">Free intake call</button>
         <a class="btn btn--wa btn--icon" href="https://wa.me/31618404015?text=Hi%20Lena!%20I%27d%20like%20to%20ask%20about%20English%20lessons." rel="noopener" data-cta="wa-header" title="Message Lena on WhatsApp" aria-label="Message Lena on WhatsApp">
@@ -213,6 +214,7 @@
       <a href="#about">About</a>
       <a href="#lessons">Lessons</a>
       <a href="#prices">Prices</a>
+      <a href="#reviews">Reviews</a>
       <a href="#faq">FAQ</a>
       <button type="button" class="btn btn--primary" data-book="menu">Book a free intake call</button>
       <a class="btn btn--wa" href="https://wa.me/31618404015?text=Hi%20Lena!%20I%27d%20like%20to%20ask%20about%20English%20lessons." rel="noopener" data-cta="wa-menu">
@@ -279,7 +281,7 @@
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M4 14h9M19 5a4.5 4.5 0 0 0-7 0c-2 2.6-2 8-2 8s0 5.4 2 8a4.5 4.5 0 0 0 7 0"/></svg>
-            <span data-synthetic="price-hour">From €45/hour, prices open</span>
+            <span>&euro;45 a lesson &middot; &euro;120 a group</span>
           </li>
         </ul>
       </div>
@@ -556,7 +558,7 @@
               </tr>
               <tr>
                 <th scope="row">Price</th>
-                <td class="col-lena">Open, €40–45/hr</td>
+                <td class="col-lena">€45 per 70-min lesson</td>
                 <td class="no">€300–600/term</td>
                 <td class="no">€5–15/mo, no teacher</td>
               </tr>
@@ -568,53 +570,44 @@
 
     <!-- ===== 10. Pricing + plan toggle ===== -->
     <section class="section" id="prices">
-      <div class="container reveal" data-pricing>
+      <div class="container reveal">
         <span class="section-kicker">Open pricing</span>
-        <h2>Transparent prices — no surprises</h2>
-        <p class="section-lead">One lesson is <strong>70 minutes</strong>, 1-on-1, materials included. Group and in-company prices follow the size of the group and how demanding the subject is — you get that figure at the intake call.</p>
-
-        <div class="plan-toggle" role="group" aria-label="Choose a package to highlight">
-          <button type="button" data-plan="single" aria-pressed="false">Single</button>
-          <button type="button" data-plan="pack5" aria-pressed="false">5 lessons</button>
-          <button type="button" data-plan="pack10" class="is-active" aria-pressed="true">10 lessons</button>
-        </div>
+        <h2>One rate for everyone</h2>
+        <p class="section-lead">No packages and no discounts: the rate is the same whether you take five lessons or fifty. What we do agree up front, at the intake call, is how long the course runs and how often we meet.</p>
 
         <div class="pricing">
           <article class="price-card">
-            <span class="price-card__flag" data-plan-panel="single" hidden>Most popular</span>
-            <h3>Single lesson</h3>
-            <p class="price-card__amount" data-synthetic="price-hour">€45</p>
-            <p class="price-card__rate">per 70 minutes</p>
+            <h3>Individual lesson</h3>
+            <p class="price-card__amount">&euro;45</p>
+            <p class="price-card__rate">per lesson of 70 minutes</p>
             <ul>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>1-on-1, fully personal</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>1-on-1, built on your own work</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Online, or at my place in Borger</li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Materials included</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Try before you commit</li>
             </ul>
-            <button type="button" class="btn btn--ghost" data-book="pricing-single" data-book-label="single lesson" data-book-plan="single">Start with an intake call</button>
+            <button type="button" class="btn btn--primary" data-book="pricing-individual" data-book-label="individual lessons" data-book-plan="individual">Book a free intake call</button>
           </article>
           <article class="price-card">
-            <span class="price-card__flag" data-plan-panel="pack5" hidden>Most popular</span>
-            <h3>5 lessons</h3>
-            <p class="price-card__amount" data-synthetic="price-pack5">€215</p>
-            <p class="price-card__rate" data-synthetic="price-pack5">€43 per lesson</p>
+            <h3>Group lesson</h3>
+            <p class="price-card__amount">&euro;120</p>
+            <p class="price-card__rate">per lesson, for the whole group</p>
             <ul>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Personal learning plan</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Flexible rescheduling</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>A good first milestone</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>75 minutes &mdash; 90 from six people</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>The price is per lesson, not per person</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>With six of you that is &euro;20 each</li>
             </ul>
-            <button type="button" class="btn btn--ghost" data-book="pricing-pack5" data-book-label="package of 5 lessons" data-book-plan="pack5">Start with an intake call</button>
+            <button type="button" class="btn btn--ghost" data-book="pricing-group" data-book-label="group lessons" data-book-plan="group">Ask about a group</button>
           </article>
           <article class="price-card">
-            <span class="price-card__flag" data-plan-panel="pack10">Most popular</span>
-            <h3>10 lessons</h3>
-            <p class="price-card__amount" data-synthetic="price-pack10">€400</p>
-            <p class="price-card__rate" data-synthetic="price-pack10">€40 per lesson — save €50</p>
+            <h3>Correspondence &amp; translation</h3>
+            <p class="price-card__amount">&euro;55</p>
+            <p class="price-card__rate">per hour</p>
             <ul>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Personal learning plan</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Progress check every 5 lessons</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Priority scheduling</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>E-mails, offers, official letters</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Translation between English, Dutch, Ukrainian and Russian</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>I write with you, or take the thread over</li>
             </ul>
-            <button type="button" class="btn btn--primary" data-book="pricing-pack10" data-book-label="package of 10 lessons" data-book-plan="pack10">Book a free intake call</button>
+            <button type="button" class="btn btn--ghost" data-book="pricing-correspondence" data-book-label="correspondence and translation" data-book-plan="correspondence">Ask about correspondence</button>
           </article>
         </div>
         <p class="method-note">
@@ -629,7 +622,7 @@
             </span>
           </span>
         </p>
-        <p class="pricing-note">There is no trial lesson — we start with a free 15-minute intake call instead, and the exact figure for a group or a company course comes out of it.</p>
+        <p class="pricing-note">There is no trial lesson — we start with a free 15-minute intake call instead. In-company courses are quoted per company, because the price includes the time I spend on site working out what your people need.</p>
       </div>
     </section>
 
@@ -672,7 +665,55 @@
       </div>
     </section>
 
-    <!-- ===== 12. How we agree the course ===== -->
+    <!-- ===== 12. Отзывы — реальные, присланы заказчицей 2026-08-08 ===== -->
+    <section class="section" id="reviews">
+      <div class="container reveal">
+        <span class="section-kicker">In their own words</span>
+        <h2>What students and clients say</h2>
+        <p class="section-lead">Real messages from students, from a parent, and from the language-training bureau I work with. The Dutch one is left exactly as it was written.</p>
+        <div class="quotes">
+
+          <figure class="quote quote--wide">
+            <blockquote>
+              <p>&ldquo;I would like to sincerely thank our wonderful tutor for everything she has done for my children. Thanks to her experience, patience, and dedication, they have come a long way &mdash; from being afraid and embarrassed to speak English to confidently having conversations on almost any topic.</p>
+              <p>She has found an individual approach to each of my children during their teenage years, even though they have very different personalities. I am also very grateful for her ability to find solutions in difficult and unexpected situations and for always being ready to find a compromise.</p>
+              <p>Thank you for always giving clear and helpful feedback about their progress, for your kindness, patience, and genuine care. I highly recommend her to anyone looking for a caring, dedicated, and professional English tutor.&rdquo;</p>
+            </blockquote>
+            <figcaption>
+              <span class="quote__avatar" aria-hidden="true">Z</span>
+              <div><strong>Zakhar O.</strong><span>Parent of two students &middot; up to C1</span></div>
+            </figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote>&ldquo;It was a real pleasure learning English with Olena Volodymyrivna. She is the kind of teacher you always want to come back to, and every lesson was an opportunity to have interesting conversations on different topics. I have only warm and positive memories of our classes. Thank you so much!&rdquo;</blockquote>
+            <figcaption>
+              <span class="quote__avatar quote__avatar--sun" aria-hidden="true">&bull;</span>
+              <div><strong>Student</strong><span>English lessons</span></div>
+            </figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote>&ldquo;We studied with Olena, and I highly recommend her! She has a great teaching approach and explains everything clearly and understandably. Learning with her is easy and enjoyable. Highly recommended!&rdquo;</blockquote>
+            <figcaption>
+              <span class="quote__avatar" aria-hidden="true">K</span>
+              <div><strong>Khrystyna</strong><span>English lessons</span></div>
+            </figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote lang="nl">&ldquo;Elena is een betrouwbare, serieuze en vriendelijke taaltrainer waarmee Dagnall Talen prettig samenwerkt.&rdquo;</blockquote>
+            <figcaption>
+              <span class="quote__avatar quote__avatar--wine" aria-hidden="true">D</span>
+              <div><strong>G. v. d. Weerdt</strong><span>Dagnall Talen &middot; language training</span></div>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 13. How we agree the course ===== -->
     <section class="section" id="guarantee" aria-label="How we agree the course">
       <div class="container">
         <div class="guarantee reveal">
@@ -687,7 +728,7 @@
       </div>
     </section>
 
-    <!-- ===== 13. FAQ ===== -->
+    <!-- ===== 14. FAQ ===== -->
     <section class="section section--beige" id="faq">
       <div class="container reveal">
         <span class="section-kicker">Good to know</span>
@@ -698,7 +739,7 @@
               <h3>How much do business English lessons cost?</h3>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
             </summary>
-            <div><p>An individual lesson runs <strong>70 minutes</strong>, a group lesson 75 — and 90 from six participants, so everyone gets checked properly. <span data-synthetic="price-hour">A single lesson is €45.</span> Translation and support with business correspondence are €55 per hour. Group and in-company prices depend on the size of the group and how demanding the subject is; you get the figure at the intake call.</p></div>
+            <div><p>An individual lesson runs <strong>70 minutes</strong>, a group lesson 75 — and 90 from six participants, so everyone gets checked properly. An individual lesson is €45. A group lesson is <strong>€120 for the whole group</strong>, whatever its size — with six people that is €20 each. Translation and support with business correspondence are €55 per hour. In-company courses are quoted per company, because the price includes the time I spend on site working out what your people need.</p></div>
           </details>
           <details>
             <summary>
@@ -732,7 +773,7 @@
       </div>
     </section>
 
-    <!-- ===== 14. Final CTA ===== -->
+    <!-- ===== 15. Final CTA ===== -->
     <section class="section section--green cta-final" id="book">
       <div class="container reveal">
         <h2>Book your free intake call</h2>
@@ -755,13 +796,11 @@
     </section>
   </main>
 
-  <!-- ===== 15. Footer ===== -->
+  <!-- ===== 16. Footer ===== -->
   <footer class="site-footer">
     <div class="container site-footer__grid">
       <div class="site-footer__legal">
         <span><strong>Engels met Lena</strong> — Elena Hagenaar, Borger (Drenthe)</span>
-        <span data-synthetic="kvk">KvK 00000000</span>
-        <span data-synthetic="btw">BTW NL000000000B00</span>
         <span><a href="mailto:elena.v.hagenaar@gmail.com">elena.v.hagenaar@gmail.com</a></span>
         <span><a href="tel:+31618404015">06 1840 4015</a> · <a href="https://wa.me/31618404015" rel="noopener">WhatsApp</a></span>
         <span><a href="privacy.html">Privacy policy</a></span>
@@ -793,9 +832,9 @@
            (цель, уровень, тариф) собирается скрытыми полями из контекста страницы,
            а тексты меняет JS по кнопке, с которой человек пришёл. -->
       <form class="book__form" data-book-form data-state="idle" action="/api/lead.php" method="post" data-demo novalidate>
-        <p class="book__kicker" data-book-kicker>Free intake call · 15 minutes · online</p>
-        <h2 class="book__title" id="book-title" data-book-heading>Book your free intake call</h2>
-        <p class="book__lead" data-book-lead>Leave your name and one contact — an e-mail address or a phone number. I reply within 24 hours with two or three times that fit. Fifteen minutes, no payment, nothing to prepare.</p>
+        <p class="book__kicker" data-book-kicker>Free · 15 minutes · online</p>
+        <h2 class="book__title" id="book-title" data-book-heading>Book your intake call</h2>
+        <p class="book__lead" data-book-lead>I reply within 24 hours with times that fit.</p>
         <p class="book__source" data-book-source-label></p>
 
         <div class="book__error" data-book-error role="alert" tabindex="-1" hidden>
@@ -812,20 +851,19 @@
           <p class="field">
             <label for="f-contact">E-mail or phone <abbr title="required">*</abbr></label>
             <input id="f-contact" name="contact" type="text" autocomplete="email" required
-                   aria-describedby="f-contact-hint" placeholder="you@work.com or +31 6 …" data-book-contact>
+                   placeholder="you@work.com or +31 6 …" data-book-contact>
           </p>
         </div>
-        <p class="field__hint" id="f-contact-hint">Whichever you prefer — I answer on the same channel you leave here.</p>
 
         <p class="field">
-          <label for="f-msg" data-book-msg-label>Anything I should know? <span class="field__opt">optional</span></label>
-          <textarea id="f-msg" name="message" rows="2" data-book-msg placeholder="Your job, what you struggle with, when you are usually free…"></textarea>
+          <label for="f-msg" data-book-msg-label>Your message <span class="field__opt">optional</span></label>
+          <textarea id="f-msg" name="message" rows="2" data-book-msg placeholder="What you need English for…"></textarea>
         </p>
 
         <p class="field field--check">
           <label class="check">
             <input type="checkbox" name="consent" value="yes" required>
-            <span>I agree that Lena may use my data to reply to this request — see the <a href="privacy.html" target="_blank" rel="noopener">privacy policy</a>. <abbr title="required">*</abbr></span>
+            <span>Lena may use my details to reply — <a href="privacy.html" target="_blank" rel="noopener">privacy</a>&nbsp;<abbr title="required">*</abbr></span>
           </label>
         </p>
 
@@ -849,22 +887,21 @@
           </button>
           <a class="btn btn--wa" href="https://wa.me/31618404015?text=Hi%20Lena!%20I%27d%20like%20a%20free%20intake%20call%20about%20English%20lessons." rel="noopener" data-cta="wa-dialog" data-book-wa>
             <svg class="i-wa" aria-hidden="true"><use href="#i-wa"></use></svg>
-            Send this on WhatsApp instead
+            WhatsApp instead
           </a>
         </div>
-        <p class="book__fineprint">Your details go to Lena only — no newsletter, no third-party marketing.</p>
       </form>
 
       <div class="book__success" data-book-success hidden>
         <p class="book__tick" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
         </p>
-        <h2>Thank you — your request is with me</h2>
-        <p data-book-done>I read every message myself and reply within 24 hours with two or three possible times. If it is urgent, WhatsApp is the fastest way to reach me.</p>
+        <h2>Thank you — I have your request</h2>
+        <p data-book-done>I reply within 24 hours with a few possible times. WhatsApp is faster if it is urgent.</p>
         <div class="book__actions">
           <a class="btn btn--wa" href="https://wa.me/31618404015?text=Hi%20Lena!%20I%20just%20sent%20a%20request%20for%20an%20intake%20call." rel="noopener" data-cta="wa-success">
             <svg class="i-wa" aria-hidden="true"><use href="#i-wa"></use></svg>
-            Message me on WhatsApp
+            WhatsApp me
           </a>
           <button type="button" class="btn btn--ghost" data-book-close>Close</button>
         </div>
